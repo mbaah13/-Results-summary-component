@@ -1,0 +1,221 @@
+:root{
+    --Lightred: hsl(0, 100%, 67%);
+    --Lighterred: hsl(0, 100%, 67%,0.1);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Orangeyedyellow: hsl(39, 100%, 56%, 0.1);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Greentealy: hsl(166, 100%, 37%,0.1);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --Cobaltbluey: hsl(234, 85%, 45%,0.1);
+
+/*  Gradients */
+    --Lightslateblue : hsl(252, 100%, 67%);
+    --Lightroyalblue : hsl(241, 81%, 54%);
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0.1);
+
+ /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+} 
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+ .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem; 
+ }
+
+.card-wrapper{
+    background:var(--White);
+    width: 100%;
+
+    border-radius: 0 0 20px 20px;
+    /* padding: 2rem; */
+    /* margin-top: 12rem; */
+} 
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-image: linear-gradient(var(--Lightslateblue),var(--Violetblue),var(--Lightroyalblue));
+    color: var(--White) ;
+    border-radius: 0 0 20px 20px;
+    margin-top: 0;
+}
+.result__title {
+    color: var(--Lightlavender) ;
+    font-size: 1.5rem;
+    padding: 1rem;
+} 
+
+.result__score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Violetblue);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;    
+}
+
+.result__score h1{
+    font-size:4rem;
+    margin: 0rem;
+} 
+
+.result__score p{
+    color: var(--Lightlavender);
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.result__description{
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.result__description h2{
+    font-weight: 400;
+    color: var(--White);
+} 
+
+.result__description p{
+    font-size: 18px;
+    text-align: center;
+    color: var(--Lightlavender);
+}
+
+/* ------ the bottom half of the card */
+.summary{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 2rem;   
+}   
+
+
+.summary__title{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    color: var();
+}
+.summary__group{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+img{
+    padding-right: 0.5rem;
+}
+.summary__reaction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: .5rem;
+    background: var(--Lighterred) ;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 1rem;
+    width: 85%;
+}
+
+.summary__memory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: .5rem;
+    background: var(--Orangeyedyellow) ;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 1rem;
+    width: 85%;
+}
+.summary__verbal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: .5rem;
+    background: var(--Greentealy) ;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 1rem;
+    width: 85%;
+}
+
+.summary__visual{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: .5rem;
+    background: var(--Cobaltbluey) ;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 1rem;
+    width: 85%;
+}
+
+.summary__button{
+    background: var(--Darkgrayblue);
+    color: var(--White);
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.summary__reaction-score{
+    font-weight: bold;
+}
+
+
+.summary__reaction-score span{
+    font-weight: lighter;
+    color: var(--Persianblue);
+} 
+
+
+@media only screen and (min-width: 600px){
+    .card-wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: 50vh;
+        box-shadow: 8px 4px 8px 8px var(--Paleblue), 0 6px 20px 0 var(--Lightlavender); 
+        
+        
+        border-radius:  20px;
+    }
+    .result-container{
+        background-image: linear-gradient(var(--Lightslateblue),var(--Violetblue),var(--Lightroyalblue));
+        padding: 2rem;
+        color: var(--White) ;
+        border-radius:  20px;
+        margin-top: 0;
+        width: 100%;
+        
+     }
+        .summary{
+            width: 100%;
+            background: var(--White);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    } 
